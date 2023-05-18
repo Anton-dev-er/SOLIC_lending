@@ -396,7 +396,7 @@ body.dark .theme-switcher {
   max-width: 470px;
 }
 .contact__right {
-  max-width: 470px;
+  width: min(100%, 470px);
   display: flex;
   flex-direction: column;
 }

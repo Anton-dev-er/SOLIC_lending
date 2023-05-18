@@ -447,7 +447,7 @@ body.dark {
   }
 
   &__right {
-    max-width: 470px;
+    width: min(100%, 470px);
     display: flex;
     flex-direction: column;
   }
