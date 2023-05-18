@@ -23,10 +23,31 @@ body {
 
 body.light {
   @include spread-map($theme-map-light);
+
+  .theme-switcher {
+    background-color: #161926;
+    color: white;
+  }
 }
 
 body.dark {
   @include spread-map($theme-map-dark);
+
+  .theme-switcher {
+    background-color: white;
+    color: #161926;
+  }
+}
+
+.theme-switcher {
+  position: fixed;
+  top: 15%;
+  right: 0;
+  padding: 30px 0 30px 18px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  cursor: pointer;
+  z-index: 1;
 }
 
 /* Container */

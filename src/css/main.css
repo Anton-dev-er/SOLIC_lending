@@ -23,6 +23,10 @@ body.light {
   --border-color: #E4E4E4;
   --nav-item-after-color: #F1897B;
 }
+body.light .theme-switcher {
+  background-color: #161926;
+  color: white;
+}
 
 body.dark {
   --button-color-main: #53F3CD;
@@ -34,6 +38,21 @@ body.dark {
   --highlighted-sign-color: #FFFFFF;
   --border-color: #515773;
   --nav-item-after-color: linear-gradient(96.73deg, #53F3CD 6.73%, rgba(83, 243, 205, 0) 116.9%);
+}
+body.dark .theme-switcher {
+  background-color: white;
+  color: #161926;
+}
+
+.theme-switcher {
+  position: fixed;
+  top: 15%;
+  right: 0;
+  padding: 30px 0 30px 18px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  cursor: pointer;
+  z-index: 1;
 }
 
 /* Container */

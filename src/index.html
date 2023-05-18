@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="index.css">
 </head>
 <body class="light">
+<div class="theme-switcher" onclick="switchTheme()">Click!!!</div>
 <header class="header background-blur">
   <div class="container">
     <div class="header__wrapper">
@@ -237,16 +238,16 @@
 </body>
 
 <script>
-  setTimeout(() => {
-    const theme = prompt('Select a theme dark/light')
-    if (theme === "dark") {
-      document.body.classList.remove("light")
-      document.body.classList.add("dark")
+  const switchTheme = () => {
+    const bodyClassList = document.body.classList;
+    if (bodyClassList.contains("light")) {
+      document.body.classList.remove("light");
+      document.body.classList.add("dark");
     } else {
       document.body.classList.add("light")
       document.body.classList.remove("dark")
     }
-  }, 3000)
+  }
 </script>
 
 </html>
