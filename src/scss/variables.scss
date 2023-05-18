@@ -1,0 +1,23 @@
+$theme-map-light: (
+        --button-color-main: #F1897B,
+        --button-color-dark: #E64F3A,
+        --body-src: url("../assets/background.png"),
+        --main-bg: #FFFFFF,
+        --text-color: #262A3F,
+        --highlighted-word-color: #85BBB1,
+        --highlighted-sign-color: #E4E4E4,
+        --border-color:#E4E4E4,
+        --nav-item-after-color: #F1897B
+);
+
+$theme-map-dark: (
+        --button-color-main: #53F3CD,
+        --button-color-dark: #02E0AB,
+        --body-src: url("../assets/background-dark.png"),
+        --main-bg: #161926,
+        --text-color: #FFFFFF,
+        --highlighted-word-color: #689FF2,
+        --highlighted-sign-color: #FFFFFF,
+        --border-color:#515773,
+        --nav-item-after-color: linear-gradient(96.73deg, #53F3CD 6.73%, rgba(83, 243, 205, 0) 116.9%)
+);
